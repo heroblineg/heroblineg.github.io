@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #808080;
+	color: #18EBF9;
+	font-size: 15px;
+	line-height: 2;
+	font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+h
+a {
+    color: ##008000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: ##008000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 960px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.global-nav li {
+    margin: 0 20px;
+    color: # C0C0C0;
+    font-size: 18px;
+    list-style: none;
+}
+
+
+
+.global-nav li a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer small {
+    font-size: 12px;
+}
+
+
+
+
+/* ------ 画面サイズが600px以下の場合に適用 ------ */
+
+@media {
+    
+    body {
+        font-size: 3.5vw;
+    }
+    
+    h1 {
+        font-size: 7.2vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+    
+    header {
+        width: auto;
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .logo {
+        margin-top: 20px;
+    }
+    
+    .main {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .contents-area,
+    .side-area {
+        width: 100%;
+        padding: 15px 25px;
+    }
+    
+    .contents-area img {
+        max-width: 100%;
+    }
+    
+    .contents-area {
+        margin-bottom: 20px;
+    }
+}
