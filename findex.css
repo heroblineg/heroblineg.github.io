@@ -130,3 +130,22 @@ footer small {
         margin-bottom: 20px;
     }
 }
+/* 全要素・全状態でカスタムカーソルを適用 */
+*, *:hover, *:active, *:focus {
+  cursor: url('cur/cur.cur'), auto !important;
+}
+
+/* テキスト選択時や入力欄でも適用 */
+input, textarea, [contenteditable], *::selection {
+  cursor: url('cur/cur.cur'), text !important;
+}
+
+/* リンクやボタンのホバー時も上書き */
+a, button, [role="button"], [onclick] {
+  cursor: url('cur/cur.cur'), pointer !important;
+}
+
+/* ドラッグ操作中も適用 */
+[draggable="true"], *:active[draggable="true"] {
+  cursor: url('cur/cur.cur'), grab !important;
+}
